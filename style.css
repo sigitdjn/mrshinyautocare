@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #151515;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 64px;
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #111111;
+    color: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.shop-button {
+    background: white;
+    color: #111111;
+
+    padding: 8px 14px;
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background: #111111;
+    color: white;
+
+    padding: 22px 18px 42px;
+}
+
+.hero-image {
+    margin-bottom: 28px;
+}
+
+.hero-image img {
+    width: 100%;
+    display: block;
+
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.eyebrow {
+    color: #aaaaaa;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    line-height: 1.08;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    display: block;
+}
+
+.hero-content > p {
+    color: #cccccc;
+
+    font-size: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+
+.whatsapp-button {
+    display: block;
+
+    width: 100%;
+
+    background: #20c063;
+    color: white;
+
+    text-align: center;
+
+    padding: 15px 18px;
+
+    border-radius: 11px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.whatsapp-button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+    padding: 52px 18px;
+}
+
+.section-label {
+    color: #888888;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 29px;
+    line-height: 1.2;
+
+    margin-bottom: 24px;
+}
+
+
+/* =========================
+   PRODUCT
+========================= */
+
+.product-card {
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.product-card > img {
+    width: 100%;
+    display: block;
+
+    background: #ffffff;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-info h3 {
+    font-size: 22px;
+
+    margin-bottom: 4px;
+}
+
+.volume {
+    color: #888888;
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+.product-info > p {
+    color: #555555;
+
+    font-size: 14px;
+
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 25px;
+    font-weight: 800;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   ADVANTAGES
+========================= */
+
+.advantages {
+    background: white;
+}
+
+.advantage-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.advantage {
+    display: flex;
+    gap: 15px;
+
+    align-items: flex-start;
+}
+
+.advantage-icon {
+    min-width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f3f3f3;
+
+    border-radius: 12px;
+
+    font-size: 21px;
+}
+
+.advantage h3 {
+    font-size: 17px;
+
+    margin-bottom: 3px;
+}
+
+.advantage p {
+    color: #666666;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   STEPS
+========================= */
+
+.steps {
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+.step {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    border: 1px solid #eeeeee;
+}
+
+.step-number {
+    color: #999999;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+}
+
+.step h3 {
+    font-size: 18px;
+
+    margin-bottom: 4px;
+}
+
+.step p {
+    color: #666666;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   TOKO
+========================= */
+
+.shop-section {
+    background: #111111;
+    color: white;
+
+    text-align: center;
+
+    padding: 55px 18px;
+}
+
+.shop-section .section-label {
+    color: #888888;
+}
+
+.shop-section h2 {
+    margin-bottom: 12px;
+}
+
+.shop-section > p {
+    color: #bbbbbb;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+.shop-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.marketplace {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    background: white;
+    color: #111111;
+
+    padding: 15px;
+
+    border-radius: 11px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #080808;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 18px;
+}
+
+footer p {
+    color: #888888;
+
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 18px;
+
+    color: #555555 !important;
+
+    font-size: 11px !important;
+}
+
+
+/* =========================
+   FLOATING WHATSAPP
+========================= */
+
+.floating-whatsapp {
+    position: fixed;
+
+    right: 18px;
+    bottom: 18px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #20c063;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 24px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+
+    z-index: 200;
+}
