@@ -26,46 +26,48 @@ a {
 ========================= */
 
 .header {
-    height: 72px;
-    padding: 0 18px;
+    height: 76px;
+    padding: 0 24px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    background: #111;
+    background: #111111;
     color: white;
 
     position: sticky;
     top: 0;
     z-index: 100;
 }
-.header .logo {
 
+.header .logo {
     width: 125px;
-    height: 52px;
+    height: 58px;
+
     display: flex;
     align-items: center;
+
     overflow: hidden;
-    
 }
 
 .header .logo img {
     width: 100%;
     height: 100%;
-    object-fit: contain; 
+
+    object-fit: contain;
     display: block;
 }
 
-
 .shop-button {
     background: white;
-    color: #111;
+    color: #111111;
 
-    padding: 8px 14px;
-    border-radius: 20px;
+    padding: 11px 18px;
 
-    font-size: 14px;
+    border-radius: 24px;
+
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -75,14 +77,19 @@ a {
 ========================= */
 
 .hero {
-    background: #111;
+    background: #111111;
     color: white;
 
-    padding: 22px 18px 42px;
+    padding: 35px 24px 55px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
 }
 
 .hero-image {
-    margin-bottom: 28px;
+    width: 100%;
 }
 
 .hero-image img {
@@ -91,30 +98,32 @@ a {
 
     display: block;
 
-    border-radius: 18px;
+    border-radius: 20px;
+
     background: white;
 }
 
 .hero-content {
-    max-width: 600px;
+    width: 100%;
 }
 
 .eyebrow {
-    color: #aaa;
+    color: #aaaaaa;
 
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
 
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .hero h1 {
-    font-size: 38px;
-    line-height: 1.08;
+    font-size: 43px;
 
-    margin-bottom: 18px;
+    line-height: 1.05;
+
+    margin-bottom: 20px;
 }
 
 .hero h1 span {
@@ -122,16 +131,18 @@ a {
 }
 
 .hero-content > p {
-    color: #ccc;
+    color: #cccccc;
 
-    font-size: 15px;
+    font-size: 17px;
 
-    margin-bottom: 25px;
+    line-height: 1.6;
+
+    margin-bottom: 28px;
 }
 
 
 /* =========================
-   WHATSAPP
+   WHATSAPP BUTTON
 ========================= */
 
 .whatsapp-button {
@@ -144,11 +155,11 @@ a {
 
     text-align: center;
 
-    padding: 15px 18px;
+    padding: 17px 18px;
 
-    border-radius: 11px;
+    border-radius: 12px;
 
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
 
     transition: 0.2s;
@@ -164,25 +175,26 @@ a {
 ========================= */
 
 .section {
-    padding: 52px 18px;
+    padding: 60px 24px;
 }
 
 .section-label {
-    color: #888;
+    color: #888888;
 
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
 
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 29px;
-    line-height: 1.2;
+    font-size: 34px;
 
-    margin-bottom: 24px;
+    line-height: 1.15;
+
+    margin-bottom: 28px;
 }
 
 
@@ -193,19 +205,19 @@ h2 {
 .products {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
 
-    gap: 12px;
+    gap: 16px;
 }
 
 .product-card {
     background: white;
 
-    border-radius: 15px;
+    border-radius: 17px;
 
     overflow: hidden;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.08);
 }
 
 .product-card > img {
@@ -217,57 +229,58 @@ h2 {
 
     display: block;
 
-    background: #fff;
+    background: white;
 }
 
 .product-info {
-    padding: 14px;
+    padding: 16px;
 }
 
 .product-info h3 {
-    font-size: 16px;
-    line-height: 1.3;
+    font-size: 18px;
 
-    margin-bottom: 4px;
+    line-height: 1.25;
+
+    margin-bottom: 5px;
 }
 
 .volume {
-    color: #888;
+    color: #888888;
 
-    font-size: 12px;
+    font-size: 13px;
 
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
 .product-info > p {
-    color: #666;
+    color: #666666;
 
-    font-size: 12px;
+    font-size: 13px;
+
     line-height: 1.5;
-
-    margin-bottom: 10px;
-}
-
-.price {
-    font-size: 17px;
-    font-weight: 800;
 
     margin-bottom: 12px;
 }
 
-/* Tombol produk lebih kecil */
+.price {
+    font-size: 19px;
+
+    font-weight: 800;
+
+    margin-bottom: 14px;
+}
 
 .product-card .whatsapp-button {
-    padding: 11px 8px;
+    padding: 12px 8px;
 
-    font-size: 12px;
+    font-size: 13px;
 
-    border-radius: 8px;
+    border-radius: 9px;
 }
 
 
 /* =========================
-   PRODUCT PLACEHOLDER
+   PLACEHOLDER
 ========================= */
 
 .product-placeholder .placeholder {
@@ -277,7 +290,7 @@ h2 {
 
     background: #eeeeee;
 
-    color: #999;
+    color: #999999;
 
     display: flex;
 
@@ -287,6 +300,7 @@ h2 {
     text-align: center;
 
     font-size: 11px;
+
     font-weight: bold;
 
     letter-spacing: 1px;
@@ -318,8 +332,8 @@ h2 {
 }
 
 .advantage-icon {
-    min-width: 42px;
-    height: 42px;
+    min-width: 46px;
+    height: 46px;
 
     display: flex;
 
@@ -328,19 +342,19 @@ h2 {
 
     background: #f3f3f3;
 
-    border-radius: 12px;
+    border-radius: 13px;
 
-    font-size: 21px;
+    font-size: 22px;
 }
 
 .advantage h3 {
-    font-size: 17px;
+    font-size: 18px;
 
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .advantage p {
-    color: #666;
+    color: #666666;
 
     font-size: 14px;
 }
@@ -351,17 +365,17 @@ h2 {
 ========================= */
 
 .shop-section {
-    background: #111;
+    background: #111111;
 
     color: white;
 
     text-align: center;
 
-    padding: 55px 18px;
+    padding: 65px 24px;
 }
 
 .shop-section .section-label {
-    color: #888;
+    color: #888888;
 }
 
 .shop-section h2 {
@@ -369,11 +383,11 @@ h2 {
 }
 
 .shop-section > p {
-    color: #bbb;
+    color: #bbbbbb;
 
-    font-size: 14px;
+    font-size: 15px;
 
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 
 .shop-links {
@@ -381,7 +395,7 @@ h2 {
 
     flex-direction: column;
 
-    gap: 12px;
+    gap: 13px;
 }
 
 .marketplace {
@@ -393,11 +407,13 @@ h2 {
     gap: 10px;
 
     background: white;
-    color: #111;
+    color: #111111;
 
-    padding: 15px;
+    padding: 17px;
 
-    border-radius: 11px;
+    border-radius: 12px;
+
+    font-size: 16px;
 
     font-weight: bold;
 }
@@ -414,11 +430,11 @@ footer {
 
     text-align: center;
 
-    padding: 35px 18px;
+    padding: 40px 24px;
 }
 
 footer p {
-    color: #888;
+    color: #888888;
 
     font-size: 14px;
 }
@@ -426,7 +442,7 @@ footer p {
 .copyright {
     margin-top: 18px;
 
-    color: #555 !important;
+    color: #555555 !important;
 
     font-size: 11px !important;
 }
@@ -439,11 +455,11 @@ footer p {
 .floating-whatsapp {
     position: fixed;
 
-    right: 18px;
-    bottom: 18px;
+    right: 20px;
+    bottom: 20px;
 
-    width: 55px;
-    height: 55px;
+    width: 58px;
+    height: 58px;
 
     display: flex;
 
@@ -456,7 +472,7 @@ footer p {
 
     border-radius: 50%;
 
-    font-size: 24px;
+    font-size: 25px;
 
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 
@@ -470,9 +486,56 @@ footer p {
 
 @media (min-width: 700px) {
 
-    .hero,
-    .section,
-    .shop-section {
+    .header {
+        height: 82px;
+        padding: 0 5%;
+    }
+
+    .header .logo {
+        width: 145px;
+        height: 65px;
+    }
+
+    .shop-button {
+        padding: 13px 22px;
+        font-size: 17px;
+    }
+
+    .hero {
+        padding: 55px 8% 70px;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 60px;
+    }
+
+    .hero-image {
+        width: 48%;
+    }
+
+    .hero-content {
+        width: 52%;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+
+        line-height: 1.02;
+    }
+
+    .hero-content > p {
+        font-size: 18px;
+
+        max-width: 560px;
+    }
+
+    .hero .whatsapp-button {
+        max-width: 500px;
+    }
+
+    .section {
         padding-left: 8%;
         padding-right: 8%;
     }
@@ -480,29 +543,24 @@ footer p {
     .products {
         grid-template-columns: repeat(3, 1fr);
 
-        gap: 18px;
+        gap: 20px;
     }
 
-    .hero {
-        display: flex;
-
-        align-items: center;
-
-        gap: 45px;
+    .product-info h3 {
+        font-size: 20px;
     }
 
-    .hero-image {
-        width: 50%;
-
-        margin-bottom: 0;
+    .product-info > p {
+        font-size: 14px;
     }
 
-    .hero-content {
-        width: 50%;
+    .price {
+        font-size: 21px;
     }
 
-    .hero h1 {
-        font-size: 48px;
+    .shop-section {
+        padding-left: 8%;
+        padding-right: 8%;
     }
 
     .shop-links {
