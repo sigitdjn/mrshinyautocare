@@ -21,12 +21,12 @@ a {
 }
 
 
-/* =========================
+/* ==================================================
    HEADER
-========================= */
+================================================== */
 
 .header {
-    height: 76px;
+    height: 78px;
     padding: 0 24px;
 
     display: flex;
@@ -42,8 +42,8 @@ a {
 }
 
 .header .logo {
-    width: 125px;
-    height: 58px;
+    width: 150px;
+    height: 64px;
 
     display: flex;
     align-items: center;
@@ -63,29 +63,31 @@ a {
     background: white;
     color: #111111;
 
-    padding: 11px 18px;
+    padding: 12px 20px;
 
-    border-radius: 24px;
+    border-radius: 26px;
 
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
+
+    white-space: nowrap;
 }
 
 
-/* =========================
+/* ==================================================
    HERO
-========================= */
+================================================== */
 
 .hero {
     background: #111111;
     color: white;
 
-    padding: 35px 24px 55px;
+    padding: 42px 24px 60px;
 
     display: flex;
     flex-direction: column;
 
-    gap: 30px;
+    gap: 34px;
 }
 
 .hero-image {
@@ -115,15 +117,17 @@ a {
 
     letter-spacing: 3px;
 
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 }
 
 .hero h1 {
-    font-size: 43px;
+    font-size: 48px;
 
-    line-height: 1.05;
+    line-height: 1.02;
 
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+
+    letter-spacing: -1px;
 }
 
 .hero h1 span {
@@ -133,7 +137,7 @@ a {
 .hero-content > p {
     color: #cccccc;
 
-    font-size: 17px;
+    font-size: 18px;
 
     line-height: 1.6;
 
@@ -141,9 +145,9 @@ a {
 }
 
 
-/* =========================
+/* ==================================================
    WHATSAPP BUTTON
-========================= */
+================================================== */
 
 .whatsapp-button {
     display: block;
@@ -159,7 +163,7 @@ a {
 
     border-radius: 12px;
 
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
 
     transition: 0.2s;
@@ -170,9 +174,9 @@ a {
 }
 
 
-/* =========================
+/* ==================================================
    SECTION
-========================= */
+================================================== */
 
 .section {
     padding: 60px 24px;
@@ -190,7 +194,7 @@ a {
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 36px;
 
     line-height: 1.15;
 
@@ -198,14 +202,14 @@ h2 {
 }
 
 
-/* =========================
+/* ==================================================
    PRODUCTS
-========================= */
+================================================== */
 
 .products {
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 16px;
 }
@@ -279,9 +283,9 @@ h2 {
 }
 
 
-/* =========================
-   PLACEHOLDER
-========================= */
+/* ==================================================
+   PLACEHOLDER PRODUK
+================================================== */
 
 .product-placeholder .placeholder {
     width: 100%;
@@ -307,9 +311,9 @@ h2 {
 }
 
 
-/* =========================
+/* ==================================================
    ADVANTAGES
-========================= */
+================================================== */
 
 .advantages {
     background: white;
@@ -360,9 +364,9 @@ h2 {
 }
 
 
-/* =========================
+/* ==================================================
    TOKO
-========================= */
+================================================== */
 
 .shop-section {
     background: #111111;
@@ -419,9 +423,9 @@ h2 {
 }
 
 
-/* =========================
+/* ==================================================
    FOOTER
-========================= */
+================================================== */
 
 footer {
     background: #080808;
@@ -448,9 +452,9 @@ footer p {
 }
 
 
-/* =========================
+/* ==================================================
    FLOATING WHATSAPP
-========================= */
+================================================== */
 
 .floating-whatsapp {
     position: fixed;
@@ -480,35 +484,38 @@ footer p {
 }
 
 
-/* =========================
+/* ==================================================
    TABLET / DESKTOP
-========================= */
+================================================== */
 
 @media (min-width: 700px) {
 
     .header {
-        height: 82px;
+        height: 88px;
         padding: 0 5%;
     }
 
     .header .logo {
-        width: 145px;
-        height: 65px;
+        width: 165px;
+        height: 72px;
     }
 
     .shop-button {
-        padding: 13px 22px;
-        font-size: 17px;
+        padding: 14px 24px;
+        font-size: 18px;
     }
 
+
+    /* ---------- HERO ---------- */
+
     .hero {
-        padding: 55px 8% 70px;
+        padding: 55px 8% 75px;
 
         flex-direction: row;
 
         align-items: center;
 
-        gap: 60px;
+        gap: 70px;
     }
 
     .hero-image {
@@ -519,26 +526,51 @@ footer p {
         width: 52%;
     }
 
-    .hero h1 {
-        font-size: 58px;
+    .eyebrow {
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
 
-        line-height: 1.02;
+    .hero h1 {
+        font-size: 64px;
+
+        line-height: 1.00;
+
+        letter-spacing: -2px;
+
+        margin-bottom: 24px;
     }
 
     .hero-content > p {
-        font-size: 18px;
+        font-size: 19px;
 
-        max-width: 560px;
+        max-width: 580px;
+
+        margin-bottom: 30px;
     }
 
     .hero .whatsapp-button {
-        max-width: 500px;
+        max-width: 520px;
+
+        padding: 18px;
+
+        font-size: 18px;
     }
+
+
+    /* ---------- SECTION ---------- */
 
     .section {
         padding-left: 8%;
         padding-right: 8%;
     }
+
+    h2 {
+        font-size: 40px;
+    }
+
+
+    /* ---------- PRODUCTS ---------- */
 
     .products {
         grid-template-columns: repeat(3, 1fr);
@@ -546,8 +578,12 @@ footer p {
         gap: 20px;
     }
 
+    .product-info {
+        padding: 18px;
+    }
+
     .product-info h3 {
-        font-size: 20px;
+        font-size: 21px;
     }
 
     .product-info > p {
@@ -555,8 +591,11 @@ footer p {
     }
 
     .price {
-        font-size: 21px;
+        font-size: 22px;
     }
+
+
+    /* ---------- TOKO ---------- */
 
     .shop-section {
         padding-left: 8%;
@@ -567,5 +606,37 @@ footer p {
         max-width: 500px;
 
         margin: auto;
+    }
+}
+
+
+/* ==================================================
+   LAYAR BESAR
+================================================== */
+
+@media (min-width: 1100px) {
+
+    .header .logo {
+        width: 175px;
+        height: 76px;
+    }
+
+    .hero {
+        padding-top: 65px;
+        padding-bottom: 85px;
+
+        gap: 80px;
+    }
+
+    .hero h1 {
+        font-size: 72px;
+    }
+
+    .hero-content > p {
+        font-size: 20px;
+    }
+
+    .hero-image img {
+        border-radius: 24px;
     }
 }
