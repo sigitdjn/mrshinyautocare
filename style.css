@@ -42,8 +42,8 @@ a {
 }
 
 .header .logo {
-    width: 225px;
-    height: 96px;
+    width: 150px;
+    height: 64px;
 
     display: flex;
     align-items: center;
@@ -52,13 +52,15 @@ a {
 }
 
 .header .logo img {
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 120%;
 
     object-fit: contain;
     display: block;
 
     transform: translateY(10px);
+    transform: translatex(30px);
+    
 }
 
 .shop-button {
