@@ -58,7 +58,7 @@ a {
     object-fit: contain;
     display: block;
 
-    transform: translateY(5px);
+    transform: translateY(10px);
 }
 
 .shop-button {
